@@ -5,13 +5,16 @@ else{
     let todolist=JSON.parse(localStorage.getItem("content"))
     console.log("changes")
     let content="";
-    for (let i=0;i<todolist.length;i++){
-        let {name,duedate}=todolist[i];
-        content+=`
-            <span class="display-content"> ${name}</span>
-        <span class="display-content"> ${duedate}</span>
-        <button id="delete-button" onclick="todolist.splice(${i},1);;display();">Delete</button>`;
-}
+    if(todolist){
+        for (let i=0;i<todolist.length;i++){
+            let {name,duedate}=todolist[i];
+            content+=`
+                <span class="display-content"> ${name}</span>
+            <span class="display-content"> ${duedate}</span>
+            <button id="delete-button" onclick="todolist.splice(${i},1);;display();">Delete</button>`;
+    }
+    }
+    
 
 }
 
