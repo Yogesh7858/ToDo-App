@@ -1,4 +1,5 @@
 let todolist=JSON.parse(localStorage.getItem("content"))
+console.log("changes")
 let content="";
 for (let i=0;i<todolist.length;i++){
     let {name,duedate}=todolist[i];
@@ -14,7 +15,7 @@ displayelement.innerHTML=content;
 
 function additem(){
     let todo=document.querySelector("#input-todo");
-    let value=todo.value;
+    let value=todo.value; 
     let datevalue=document.querySelector("#input-date");
     let date=datevalue.value;
     if( value && date){
