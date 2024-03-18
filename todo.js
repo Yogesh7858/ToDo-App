@@ -2,9 +2,10 @@ if (localStorage.getItem("content")===null){
     console.log("changes  empty storage")
     localStorage.setItem("content",[])
     let content="";
+    var todolist=JSON.parse(localStorage.getItem("content"));
 }
 else{
-    var todolist=JSON.parse(localStorage.getItem("content"))
+    var todolist=JSON.parse(localStorage.getItem("content"));
     console.log("changes")
     let content="";
     if(todolist){
