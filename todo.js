@@ -4,7 +4,7 @@ if (localStorage.getItem("content")===null){
     let content="";
 }
 else{
-    let todolist=JSON.parse(localStorage.getItem("content"))
+    var todolist=JSON.parse(localStorage.getItem("content"))
     console.log("changes")
     let content="";
     if(todolist){
