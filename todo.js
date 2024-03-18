@@ -1,5 +1,5 @@
 if (localStorage.getItem("content")===null){
-    localStorage.setItem("content"=[])
+    localStorage.setItem("content",[])
 }
 else{
     let todolist=JSON.parse(localStorage.getItem("content"))
