@@ -1,6 +1,6 @@
 if (localStorage.getItem("content")===null){
     console.log("changes  empty storage")
-    localStorage.setItem("content",["name","name1","date","date"])
+    localStorage.setItem("content", JSON.stringify(["name", "name1", "date", "date"]));
     let content="";
     var todolist=JSON.parse(localStorage.getItem("content"));
 }
