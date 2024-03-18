@@ -1,13 +1,13 @@
 if (localStorage.getItem("content")===null){
     console.log("changes  empty storage")
-    localStorage.setItem("content", JSON.stringify(["name", "name1", "date", "date"]));
-    let content="";
+    localStorage.setItem("content", JSON.stringify(["name", "date"]));
+    var content="";
     var todolist=JSON.parse(localStorage.getItem("content"));
 }
 else{
     var todolist=JSON.parse(localStorage.getItem("content"));
     console.log("changes")
-    let content="";
+    var content="";
     if(todolist){
         for (let i=0;i<todolist.length;i++){
             let {name,duedate}=todolist[i];
