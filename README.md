@@ -26,9 +26,7 @@
 - CSS3
 - JavaScript
 
-## Screenshots
 
-- Include screenshots of the todo app in action (optional).
 
 ## Contributing
 
@@ -46,6 +44,6 @@
 ## Acknowledgements
 
 - Inspired by the need for a simple and efficient todo app.
-- Special thanks to [YourName] for the idea and support.
+- Special thanks to Harry for the idea and support.
 
 Enjoy managing your tasks with the Todo App!
